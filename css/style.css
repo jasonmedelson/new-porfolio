@@ -220,5 +220,293 @@ nav a {
 }
 .image-holder {
     height: 500px;
+    width: 360px;
+    margin-bottom: 20px;
 }
 
+/* ============================= CAROUSEL SECTION =========================== */
+.carousel {
+  background: #f8f8f8;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 80px; }
+  .carousel-inner>.item{
+    height:700px;
+  }
+  .carousel .carousel-indicators {
+    display: block;
+    bottom: -50px; }
+  .carousel .carousel-inner > .item > img {
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 400px; }
+  .carousel .carousel-inner > .item > .btn-wrp {
+     margin-top: 30px;
+ }
+  .carousel .container p, .carousel .container h1, .carousel .container h2 {
+    max-width: 800px;
+    margin: 20px auto; }
+
+.carousel-control {
+  color: #000 !important; }
+
+.carousel-indicators li {
+  border: 1px solid #aaa; }
+
+.carousel-indicators .active {
+  background-color: #aaa;
+  border: 1px solid #fff; }
+
+/* ============================ PARALLAX SECTION ============================ */
+#parallax {
+  position: relative;
+  width: 100%;
+  background: url(../img/skyline.jpg) no-repeat 50% 0 fixed;
+  background-size: cover;
+  height: 350px; }
+  #parallax h2 {
+    color: #fff;
+    margin-top: 130px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px black; }
+  #parallax p {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right; }
+
+/* ============================= SKILLS SECTION ============================= */
+#skills {
+  padding: 60px 0 40px 0;
+  text-align: center;
+  /* end staff-me */ }
+  #skills .staff-mem {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #skills .staff-mem h4 {
+      font-size: 22px;
+      color: #f52c45; }
+    #skills .staff-mem p {
+      margin-bottom: 10px; }
+    #skills .staff-mem.anim {
+      top: -10px; }
+    #skills .staff-mem img {
+      height: 200px;
+      width: 200px;
+      margin: 0 auto;
+      border: 3px solid #ccc; }
+   #skills p {
+    margin-bottom: 60px; }
+   #skills h5 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #f52c45;
+   }
+   #skills li {
+      font-size: 18px;
+      margin: 8px 0;
+   }
+   .modal-header {
+      background-color: #ccc;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+   }
+
+   .modal-body h5 {
+      padding-top: 20px;
+   }
+
+/* ========================== CONTACT SECTION =============================== */
+#contact {
+  background: #f52c45;
+  color: #fff;
+  padding: 80px 0 120px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc; }
+  #contact p {
+    margin: 10px 0; }
+  #contact h2 {
+      color: #fff; }
+  #contact .btn {
+    width: 100%; }
+
+   #myemail {
+      font-weight: 900;
+      font-size: 22px;
+      color: #fff;
+   }
+
+/* =========================== LINKS SECTION ================================ */
+#links {
+  padding: 60px 0 65px 0;
+  text-align: center;
+  /* end post */ }
+   #links .post p {
+     margin: 20px 0; }
+   #links .post h3 {
+      color: #f52c45;
+   }
+   #links .post i {
+      color: #3d505f;
+   }
+   #links .post .post-pic {
+      text-align: center;
+      margin: 10px auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      border: 3px solid #000;
+      width: 288px;
+      height: 240px;
+      /* end img */ }
+      #links .post .post-pic img {
+        -webkit-transition: all 2.5s ease;
+        -moz-transition: all 2.5s ease;
+        -o-transition: all 2.5s ease;
+        transition: all 2.5s ease; }
+        #links .post .post-pic img.anim {
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.food{
+  background:url(../img/food.jpg);
+  background-size:cover;
+}
+
+/* ================================ FOOTER ================================== */
+footer {
+  background-color: #222327;
+  padding: 10px 0; }
+  footer h4 {
+   color: #f52c45;
+   font-size: 24px;
+   margin-bottom: 14px;
+    }
+  footer p {
+    margin: 10px 0 0 0;
+    font-family: "Cardo", "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #999999; }
+  footer .sn-links {
+    margin: 0;
+    text-align: right; }
+    footer .sn-links a {
+      color: #fff; }
+
+/* ============================= MEDIA QUERIES ============================== */
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+@media(max-width: 767px ){
+  header h1#logo{
+    text-align: center;
+  }
+  .center{
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    min-height: 50px; }
+    header h1#logo {
+      position: relative;
+      top: -6px; }
+    header a.mini-nav {
+      position: relative;
+      top: -8px;
+      /*  line-height: 0; */ }
+    .center{
+      text-align: center;
+    }
+  #main {
+    min-height: 500px !important; }
+    #main .cont-wrapper {
+      top: 100px; }
+    #main p.intro {
+      text-align: center;
+      font-size: 32px;
+      line-height: 38px; }
+
+  .btn-db {
+    margin-top: 10px; }
+
+  #links .post h3 {
+    margin-top: 65px; }
+
+  #projects img {
+    max-width: 290px; }
+
+  footer p, footer .sn-links {
+    text-align: center; }
+}
+
+@media (max-width: 1199px) {
+   header h1#logo {
+       font-size: 24px;
+      }
+}
+
+@media (max-width: 991px) {
+  header a.mini-nav {
+    font-size: 28px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 8px;
+    border-radius: 5px; }
+  header nav ul {
+    padding: 0;
+    margin-top: 40px;
+    display: none; }
+  header nav ul.nav li {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    header nav ul.nav li:hover {
+      background: rgba(0, 0, 0, 0.2); }
+    header nav ul.nav li a {
+      display: block;
+      width: 100%; }
+
+  h1 {
+    font-size: 34px;
+    line-height: 38px; }
+
+  h2 {
+    font-size: 28px;
+    line-height: 32px; }
+
+  h3 {
+    font-size: 22px;
+    line-height: 26px; }
+
+  #main {
+    background-attachment: scroll;
+    min-height: 600px; }
+    #main .cont-wrapper {
+      top: 110px; }
+    #main p.intro {
+      text-align: center; }
+
+  #home {
+    padding-top: 30px; }
+    #home .ipad {
+      top: 140px; }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #home .text {
+    top: 0; }
+}
